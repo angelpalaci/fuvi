@@ -13,8 +13,7 @@ int main(){
 	
 	cout << setw(20) << left <<"Programacion" << setw(10) << right << "12" <<endl;
 	
-	cout << setw(20) << left <<"Estudiantes" << setw (10) << right << "9" << endl;
-	cout << fixed << setprecision (10) << 12.34467;
-	
+	cout << setw(20) << left <<"Redes" << setw (10) << right << "9" << endl;
+
 	return 0;
 }

@@ -6,7 +6,7 @@ Instrucciones: Ejemplo programacion con estructura
 */
 
 #include<iostream>
-
+#include<string>
 using namespace std;
 //Variable globales
 const double TASA_ANTIGUEDAD = 15 ;
