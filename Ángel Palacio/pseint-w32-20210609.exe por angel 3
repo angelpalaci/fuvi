@@ -1,0 +1,78 @@
+Algoritmo sin_titulo
+	//Piramide
+	//Variables 
+	Definir areaLateral, perimetrobase, areaBase, areaTotal, altura, volumen, apotemaPiramide, apotemaBase Como Real
+	
+	
+	// Proceso
+	Escribir "(1) Area Lateral"
+	Escribir " (2) Apotema Piramide"
+	Escribir "(3) Area Total"
+	Escribir "(4) Volumen"
+	
+	Leer opcines
+	Segun opcines Hacer
+		1:
+			//Area lateral
+			 
+			Escribir "Ingrese el perimetro base de la piramide"
+			leer perimetrobase
+			si ( perimetrobase > 0 ) Entonces
+				
+				Escribir "Introduzca la apotema de la piramide"
+				leer apotemaPiramide
+				
+				areaLateral <- ( perimetrobase * apotemaPiramide) / 2
+				
+				Escribir "El area lateral de la piramide es de:" areaLateral
+			SiNo
+				Escribir "El valor que introdujo no es valido"
+				
+			FinSi
+		2:
+			//apotema piramide
+			Escribir "Ingrese la altura de la piramide'
+			leer altura
+			si ( altura > 0 ) Entonces
+				
+				Escribir "Ingrese la apotema base"
+				leer apotemaBase
+				
+				apotemaPiramide <-  raiz(( altura ^ 2 )+(apotemaBase ^ 2 ) )
+				Escribir "La apotema de la piramide es de:" apotemaPiramide
+			SiNo
+				Escribir "El valor que introdujo no es valido ingrese otro"
+			FinSi
+		3:
+			// Area Total
+			
+			Escribir "Ingrese el area Lateral de la piramide"
+			leer areaLateral
+			si ( areaLateral > 0 ) Entonces
+				Escribir "Ingrese el area base"
+				leer areaBase
+				
+				areaTotal <- areaLateral + areaBase
+				Escribir "El area Total de la piramide es de:" areaTotal
+				
+			SiNo
+				Escribir "El valor que usted ingreso n es valido ingrese otro"
+				
+			FinSi
+		4:
+			// volumen
+			Escribir "Ingrese el valor del area base de la piramide rectangular"
+			leer areaBase
+			Si (areaBase > 0 ) Entonces
+				
+				Escribir "Ingrese el valor de la altura"
+				leer altura
+				
+				volumen <- (areaBase * altura ) / 3
+			SiNo
+				Escribir "El valor que usted ingreso n es valido ingrese otro"
+				
+			FinSi
+	FinSegun
+Escribir "Gracias por utilizar nuestros servicios"
+FinAlgoritmo
