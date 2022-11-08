@@ -7,28 +7,37 @@ Instrucciones: Ejemplo programacion con estructura
 
 #include<iostream>
 #include<string>
+#include<iomanip>
+#include<stdlib.h>
 using namespace std;
+
 //Variable globales
 const double TASA_ANTIGUEDAD = 15 ;
 const double TASA_SINDICATO = 1;
 const double TASA_INSS = 7;
 const double TASA_IR = 15.6 ;
 const double TASA_INSS_PATRONAL = 22.5;
-int main(){
+string nombre;
+
 	//VARIABLES LOCALES A MAIN
 	double salarioBasico, ingresoNeto, ingresoTotal, deduccionesTotales;
 	double montoSindicato, montoINSS, montoIR, montoINSSPatronal, montoAntiguedad;
-	string nombre;
+
 	//pedir datos de usuario
 	cout << "Ingrese su nombre ";
 	cin >> nombre;
 	cout <<" Hola " << nombre << ", ingrese su salario básico: C$";
-	cin >> salarioBasico;
+	cin >> salarioBasico;	
+			
+
+int main(){
+
+	
 	
 	//calcular los ingresos
 	montoAntiguedad = salarioBasico *(TASA_ANTIGUEDAD / 100);
 	ingresoTotal = salarioBasico + montoAntiguedad;
-	//calcular deducciones
+	//calcular deducciones 
 	montoSindicato = salarioBasico * (TASA_SINDICATO / 100);
 	montoINSS = ingresoTotal * (TASA_INSS /100);
 	montoIR = ingresoTotal * (TASA_IR /100);
